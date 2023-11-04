@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="qr.css" type="text/css" />
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <div class="container">
+      <div class="input">
+        <form action="#" id="frm">
+          <div class="form-group">
+            <label for="url" class="link">Enter your link</label>
+            <input type="text" id="url" placeholder="Enter URL" required />
+          </div>
+          <div class="form-group">
+            <label for="select">select your size</label>
+            <select id="select">
+              <option value="100">100X100</option>
+              <option value="200">200X200</option>
+              <option value="300">300X300</option>
+              <option value="300">300X300</option>
+            </select>
+          </div>
+          <div class="form-single-group">
+            <label for="whiteclr">color light</label>
+            <input type="color" id="whiteclr" value="#ffffff" />
+          </div>
+          <div class="form-single-group">
+            <label for="darkclr">color dark</label>
+            <input type="color" id="darkclr" value="#000000" />
+          </div>
+          <button type="submit">generate qr code</button>
+          <a href="#" id="btnsave" download>save image</a>
+        </form>
+      </div>
+      <div class="output">
+        <div id="qrcode">
+          <h3>Please enter URL to generate</h3>
+        </div>
+        <div id="loding">
+          <div id="spinner"></div>
+          <p>wait a minute</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="qr.js"></script>
+  </body>
+</html>

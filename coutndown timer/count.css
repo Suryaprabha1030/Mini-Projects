@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-family: 'Calligraffitti', cursive; */
+/* font-family: 'Poppins', sans-serif; */
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: cadetblue;
+}
+p {
+  font-size: 13px;
+}
+h4 {
+  font-family: "Calligraffitti", cursive;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.counter {
+  display: flex;
+  border-radius: 30px;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-weight: 1200;
+  padding: 20px;
+}
+.box h2 {
+  font-size: 25px;
+}
+.box small {
+  font-size: 10px;
+}
+@media (min-width: 576px) {
+  p {
+    font-size: 18px;
+  }
+  .h4 {
+    font-size: 100px;
+  }
+  .box {
+    width: 100px;
+    height: 70px;
+  }
+
+  .box h2 {
+    font-size: 30px;
+  }
+  .box small {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 25px;
+  }
+  .h4 {
+    font-size: 150px;
+  }
+
+  .box {
+    width: 150px;
+    height: 100px;
+  }
+
+  .box h2 {
+    font-size: 50px;
+  }
+  .box small {
+    font-size: 20px;
+  }
+}
