@@ -1,44 +1,54 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: poppins;
 }
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(/main.jpg);
+  margin: 50px;
+  background-image: url(main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 24px;
-  padding: 24px;
-}
-.sticky {
-  height: 200px;
-  padding: 16px;
-  font-size: 18px;
-  background-color: white;
-  border: none;
-  outline: none;
-  resize: none;
-  /* border-radius:  ; */
-}
-span {
-  font-weight: 200;
+.content button img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  filter: invert(100%);
+  margin-left: 5px;
 }
 button {
-  background-color: green;
+  background-color: rebeccapurple;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   color: white;
   font-size: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 button:hover {
   background-color: blue;
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  min-height: 150px;
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
+}
+.input-box img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
 }
